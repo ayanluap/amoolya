@@ -1,0 +1,146 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-height: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  z-index: 1000;
+  transition: all 0.3s ease;
+
+  &.navbar-transparent {
+    background: transparent;
+  }
+
+  &.navbar-colored {
+    background: $blue-d;
+    box-shadow: 0.1rem 0.1rem 1rem rgba($black, 0.5);
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 100%;
+
+    img {
+      height: 100%;
+      width: 15rem;
+    }
+  }
+
+  &__check {
+    display: none;
+  }
+
+  &__label {
+    display: none;
+
+    @include respond(tab-port) {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  &__nav {
+    @include respond(tab-port) {
+      position: fixed;
+      min-height: 100vh;
+      top: 0;
+      left: 0;
+      width: 100%;
+      pointer-events: none;
+      background: none;
+      overflow: auto;
+      overflow-x: hidden;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__list-collection {
+    list-style: none;
+    display: flex;
+    width: 45rem;
+    font-size: 1.8rem;
+    justify-content: space-between;
+
+    @include respond(tab-port) {
+      position: absolute;
+      right: 0;
+      height: 100vh;
+      width: 60%;
+      background: $white;
+      overflow-x: hidden;
+      padding: 10rem 2rem 2rem 2rem;
+      list-style: none;
+      transform: translateX(100%);
+      transition: all 0.3s ease;
+      z-index: 1000;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  &__check:checked + .navbar__nav {
+    @include respond(tab-port) {
+      pointer-events: initial;
+      background: rgba($black, 0.6);
+    }
+  }
+
+  &__check:checked + .navbar__nav .navbar__list-collection {
+    transform: translateX(0);
+  }
+
+  &__list {
+    @include respond(tab-port) {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $white;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $yellow;
+
+      @include respond(tab-port) {
+        color: $blue-d;
+      }
+    }
+
+    @include respond(tab-port) {
+      color: $blue-d;
+      font-size: 2.5rem;
+    }
+  }
+
+  .close {
+    display: none;
+
+    @include respond(tab-port) {
+      position: absolute;
+      display: block;
+      color: $yellow;
+      font-size: 7rem;
+      top: -2rem;
+      right: 50%;
+      transform: translateX(50%);
+      color: $blue-l;
+      cursor: pointer;
+    }
+  }
+}

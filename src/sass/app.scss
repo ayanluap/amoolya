@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// MEDIA QUERY MANAGER
+
+/*
+breakpoint argument classes-
+-phone      
+-tab-port
+-tab-land
+-[normal]
+-big-scr
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint==tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint==tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint==big-scr {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+
+  @include respond(tab-land) {
+    //1rem=9px
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    // 1rem = 8px
+    font-size: 50%;
+  }
+  @include respond(phone) {
+    // 1rem = 8px
+    font-size: 50%;
+  }
+  @include respond(big-scr) {
+    // 1rem = 12px
+    font-size: 75%;
+  }
+}
+
+@import './abstract/variables';
+@import './abstract/mixins';
+@import './abstract/typography';
+@import './abstract/utilities';
+
+@import './components/navbar';
+@import './components/section.scss';
+@import './components/buttons.scss';

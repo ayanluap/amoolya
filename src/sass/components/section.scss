@@ -1,0 +1,38 @@
+.section {
+}
+
+.landing {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: url('assets/landing.jpg') no-repeat center center/cover;
+
+  @include respond(tab-port) {
+    height: 60rem;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba($blue-d, 0.6);
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      align-items: flex-start;
+      overflow-x: hidden;
+    }
+  }
+
+  &__down-caret {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+}
