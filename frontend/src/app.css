@@ -36,19 +36,6 @@ body {
   line-height: 1.7;
   box-sizing: border-box; }
 
-.container {
-  max-width: 110rem;
-  margin: 0 auto; }
-  @media (max-width: 75em) {
-    .container {
-      max-width: 90rem; } }
-  @media (max-width: 56.25em) {
-    .container {
-      width: 80%; } }
-  @media (max-width: 37.5em) {
-    .container {
-      width: 90%; } }
-
 .prime-heading {
   color: #fff;
   font-size: 5rem;
@@ -72,6 +59,90 @@ body {
   @media (max-width: 56.25em) {
     .second-heading {
       font-size: 2rem; } }
+
+.h1 {
+  color: #2d237c;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.3;
+  margin-bottom: 2rem; }
+  @media (max-width: 56.25em) {
+    .h1 {
+      font-size: 4rem;
+      text-align: center; } }
+  @media (max-width: 37.5em) {
+    .h1 {
+      font-size: 3.5rem; } }
+
+.h2 {
+  color: #2d237c;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.3;
+  margin-bottom: 2rem; }
+  @media (max-width: 56.25em) {
+    .h2 {
+      font-size: 4rem;
+      text-align: center; } }
+  @media (max-width: 37.5em) {
+    .h2 {
+      font-size: 3.5rem; } }
+
+.h3 {
+  color: #2d237c;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.3;
+  margin-bottom: 2rem; }
+  @media (max-width: 56.25em) {
+    .h3 {
+      font-size: 2rem;
+      text-align: center; } }
+  @media (max-width: 37.5em) {
+    .h3 {
+      font-size: 2rem; } }
+
+.container {
+  max-width: 110rem;
+  margin: 0 auto; }
+  @media (max-width: 75em) {
+    .container {
+      max-width: 90rem; } }
+  @media (max-width: 56.25em) {
+    .container {
+      width: 80%; } }
+  @media (max-width: 37.5em) {
+    .container {
+      width: 90%; } }
+
+.u-main-text {
+  font-size: 1.8rem;
+  color: #333; }
+  @media (max-width: 56.25em) {
+    .u-main-text {
+      text-align-last: center; } }
+
+.u-text {
+  font-size: 1.8rem;
+  color: #333; }
+
+.u-center {
+  text-align: center; }
+
+.u-mb-2 {
+  margin-bottom: 2rem; }
+
+.u-mb-3 {
+  margin-bottom: 3rem; }
+
+.u-mb-5 {
+  margin-bottom: 5rem; }
+
+.u-ml-5 {
+  margin-left: 5rem; }
 
 .navbar {
   position: fixed;
@@ -124,7 +195,7 @@ body {
   .navbar__list-collection {
     list-style: none;
     display: flex;
-    width: 45rem;
+    width: 60rem;
     font-size: 1.8rem;
     justify-content: space-between; }
     @media (max-width: 56.25em) {
@@ -179,6 +250,10 @@ body {
         color: #2d237c;
         cursor: pointer; } }
 
+.section__header {
+  height: 50vh;
+  background: #000; }
+
 .landing {
   position: relative;
   min-height: 100vh;
@@ -206,14 +281,68 @@ body {
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer; }
+  .landing__showcase {
+    padding: 4rem 0;
+    background-color: #ccc; }
+  .landing__content {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 56.25em) {
+      .landing__content {
+        flex-wrap: wrap; } }
+    @media (max-width: 37.5em) {
+      .landing__content {
+        flex-direction: column; } }
+
+.who-we-serve__showcase,
+.client-exp__showcase {
+  padding: 4rem 0;
+  background-color: #ccc;
+  text-align: center; }
+
+.who-we-serve__details,
+.client-exp__details {
+  padding: 4rem 0; }
 
 .btn:link, .btn:visited {
   padding: 1rem 3rem;
-  background: #dbee69;
   display: inline-block;
   border-radius: 0.3rem;
   font-size: 1.5rem;
-  margin: 1rem 0;
-  color: #1b0f61;
+  margin: 2rem 0;
   text-decoration: none;
-  font-weight: 500; }
+  font-weight: 500;
+  text-transform: capitalize; }
+
+.btn--yellow {
+  background-color: #dbee69;
+  color: #1b0f61; }
+
+.btn--blue {
+  background-color: #1b0f61;
+  color: #dbee69; }
+
+.card {
+  height: 30rem;
+  background: rgba(45, 35, 124, 0.3);
+  width: 33.33%;
+  margin-bottom: 1rem;
+  margin: 0 2rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .card:not(:last-child) {
+    margin-right: 1.5rem; }
+  @media (max-width: 56.25em) {
+    .card {
+      width: 35rem;
+      margin-bottom: 2rem; } }
+  @media (max-width: 37.5em) {
+    .card {
+      width: 35rem;
+      margin-bottom: 2rem; } }

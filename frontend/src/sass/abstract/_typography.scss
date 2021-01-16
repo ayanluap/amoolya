@@ -1,0 +1,89 @@
+body {
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+.prime-heading {
+  color: $white;
+  font-size: 5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+
+  @include respond(tab-port) {
+    font-size: 4rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3.5rem;
+  }
+}
+
+.second-heading {
+  color: $yellow;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+  }
+}
+
+.h1 {
+  color: $blue-l;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+
+  @include respond(tab-port) {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  @include respond(phone) {
+    font-size: 3.5rem;
+  }
+}
+
+.h2 {
+  color: $blue-l;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+
+  @include respond(tab-port) {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  @include respond(phone) {
+    font-size: 3.5rem;
+  }
+}
+
+.h3 {
+  color: $blue-l;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+}

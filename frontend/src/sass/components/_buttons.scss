@@ -1,0 +1,25 @@
+.btn {
+  &:link,
+  &:visited {
+    padding: 1rem 3rem;
+    // background: $yellow;
+    display: inline-block;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    // color: $blue-d;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  &--yellow {
+    background-color: $yellow;
+    color: $blue-d;
+  }
+
+  &--blue {
+    background-color: $blue-d;
+    color: $yellow;
+  }
+}

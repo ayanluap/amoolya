@@ -7,10 +7,11 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const scrollHandler = () => {
-    window.scrollY > 5 ? setScrolled(true) : setScrolled(false);
+    window.scrollY > 0 ? setScrolled(true) : setScrolled(false);
   };
 
   useEffect(() => {
+    window.scrollY > 0 ? setScrolled(true) : setScrolled(false);
     window.addEventListener('scroll', scrollHandler);
   }, []);
 
@@ -58,7 +59,7 @@ const Navbar = () => {
             </div>
             <li className="navbar__list">
               <NavLink
-                to="#"
+                to="/"
                 className="navbar__link"
                 activeClassName="active"
                 onClick={navClose}
@@ -68,7 +69,17 @@ const Navbar = () => {
             </li>
             <li className="navbar__list">
               <NavLink
-                to="#"
+                to="/client-experience"
+                className="navbar__link"
+                activeClassName="active"
+                onClick={navClose}
+              >
+                Client Experience
+              </NavLink>
+            </li>
+            <li className="navbar__list">
+              <NavLink
+                to="/who-we-serve"
                 className="navbar__link"
                 activeClassName="active"
                 onClick={navClose}
@@ -78,7 +89,7 @@ const Navbar = () => {
             </li>
             <li className="navbar__list">
               <NavLink
-                to="#"
+                to="/blogs"
                 className="navbar__link"
                 activeClassName="active"
                 onClick={navClose}
@@ -88,7 +99,7 @@ const Navbar = () => {
             </li>
             <li className="navbar__list">
               <NavLink
-                to="#"
+                to="/about"
                 className="navbar__link"
                 activeClassName="active"
                 onClick={navClose}
@@ -98,7 +109,7 @@ const Navbar = () => {
             </li>
             <li className="navbar__list">
               <NavLink
-                to="#"
+                to="/contact"
                 className="navbar__link"
                 activeClassName="active"
                 onClick={navClose}

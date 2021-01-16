@@ -1,11 +1,20 @@
 {
-  "emmet.showSuggestionsAsSnippets": true,
-  "emmet.triggerExpansionOnTab": true,
-  "eslint.format.enable": true,
-  "eslint.options": {},
-  "eslint.nodePath": "",
-
+  "emmet.excludeLanguages": ["markdown"],
+  "bracketPairColorizer.consecutivePairColors": [
+    "()",
+    "[]",
+    "{}",
+    ["Gold", "Orchid", "LightSkyBlue"],
+    "Red"
+  ],
+  "bracketPairColorizer.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}; opacity: 0.5"
+  ],
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
+    "razor": "html",
+    "plaintext": "pug"
   }
 }

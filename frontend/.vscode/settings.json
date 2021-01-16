@@ -1,0 +1,11 @@
+{
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.format.enable": true,
+  "eslint.options": {},
+  "eslint.nodePath": "",
+
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
+}
