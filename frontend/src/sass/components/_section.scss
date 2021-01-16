@@ -1,7 +1,7 @@
 .section {
   &__header {
     height: 50vh;
-    background: #000;
+    // background: #000;
   }
 }
 
@@ -64,36 +64,85 @@
 
 .who-we-serve,
 .client-exp,
-.about {
+.about,
+.blogs,
+.contact {
   &__showcase {
     padding: 4rem 0;
     background-color: $grey-l;
-    text-align: center;
+    // text-align: center;
   }
   &__details {
     padding: 4rem 0;
   }
-}
 
-.about {
-  &__content {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-
-    @include respond(tab-port) {
-      flex-direction: column;
-    }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($blue-d, 0.8);
+    padding: 4rem;
   }
 
   &__img {
     display: block;
     width: 30rem;
-    margin-right: 2rem;
+    // margin-right: 2rem;
     border-radius: 0.5rem;
+    margin: 0 2rem 2rem 0;
 
     @include respond(tab-port) {
       margin: 2rem auto;
     }
   }
+
+  &__text {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    color: $yellow;
+
+    @include respond(tab-port) {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.client-exp {
+  position: relative;
+  background: url('assets/clientExp.jpg') no-repeat center center/cover;
+}
+
+.who-we-serve {
+  position: relative;
+  background: url('assets/whoWeServe.jpg') no-repeat center center/cover;
+}
+
+.about {
+  position: relative;
+  background: url('assets/landing.jpg') no-repeat center center/cover;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+}
+
+.blogs {
+  position: relative;
+  background: url('assets/blogs.jpg') no-repeat center center/cover;
+}
+
+.contact {
+  position: relative;
+  background: url('assets/contact.jpg') no-repeat center center/cover;
 }

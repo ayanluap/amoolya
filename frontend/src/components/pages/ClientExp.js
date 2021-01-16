@@ -6,7 +6,11 @@ const ClientExp = () => {
   return (
     <Layout>
       <div className="section__header client-exp">
-        <div className="client-exp__overlay"></div>
+        <div className="client-exp__overlay">
+          <p className="about__text container prime-heading">
+            Client Experence
+          </p>
+        </div>
       </div>
 
       <div className="client-exp__showcase ">

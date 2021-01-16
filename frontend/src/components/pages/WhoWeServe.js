@@ -5,7 +5,9 @@ const WhoWeServe = () => {
   return (
     <Layout>
       <div className="section__header who-we-serve">
-        <div className="who-we-serve__overlay"></div>
+        <div className="who-we-serve__overlay">
+          <p className="about__text container prime-heading">Who We Serve?</p>
+        </div>
       </div>
       <div className="who-we-serve__showcase ">
         <div className="container">

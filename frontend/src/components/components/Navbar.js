@@ -70,6 +70,16 @@ const Navbar = () => {
             </li>
             <li className="navbar__list">
               <NavLink
+                to="/about"
+                className="navbar__link"
+                activeClassName="active"
+                onClick={navClose}
+              >
+                About
+              </NavLink>
+            </li>
+            <li className="navbar__list">
+              <NavLink
                 to="/client-experience"
                 className="navbar__link"
                 activeClassName="active"
@@ -96,16 +106,6 @@ const Navbar = () => {
                 onClick={navClose}
               >
                 Blogs
-              </NavLink>
-            </li>
-            <li className="navbar__list">
-              <NavLink
-                to="/about"
-                className="navbar__link"
-                activeClassName="active"
-                onClick={navClose}
-              >
-                About
               </NavLink>
             </li>
             <li className="navbar__list">

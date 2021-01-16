@@ -1,0 +1,40 @@
+.footer {
+  min-height: 8rem;
+  background-color: $blue-l;
+  color: $white;
+  max-height: auto;
+  padding: 3rem 0;
+
+  &__link {
+    text-decoration: none;
+    color: $yellow;
+    font-size: 1.5rem;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__right {
+    display: flex;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

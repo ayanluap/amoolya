@@ -5,7 +5,9 @@ const Blogs = () => {
   return (
     <Layout>
       <div className="section__header blogs">
-        <div className="blogs__overlay"></div>
+        <div className="blogs__overlay">
+          <p className="about__text container prime-heading">Our Blogs</p>
+        </div>
       </div>
     </Layout>
   );
