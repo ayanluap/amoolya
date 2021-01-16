@@ -60,6 +60,7 @@ const Navbar = () => {
             <li className="navbar__list">
               <NavLink
                 to="/"
+                exact
                 className="navbar__link"
                 activeClassName="active"
                 onClick={navClose}

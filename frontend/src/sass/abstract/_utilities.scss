@@ -28,6 +28,20 @@
   color: $grey-d;
 }
 
+.u-link {
+  color: $blue-l;
+}
+
+.u-badge {
+  padding: 0.5rem 2rem;
+  background: $yellow;
+  color: $blue-d;
+  border-radius: 0.5rem;
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
 .u-center {
   text-align: center;
 }

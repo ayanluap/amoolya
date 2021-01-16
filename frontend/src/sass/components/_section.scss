@@ -63,7 +63,8 @@
 }
 
 .who-we-serve,
-.client-exp {
+.client-exp,
+.about {
   &__showcase {
     padding: 4rem 0;
     background-color: $grey-l;
@@ -71,5 +72,28 @@
   }
   &__details {
     padding: 4rem 0;
+  }
+}
+
+.about {
+  &__content {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 30rem;
+    margin-right: 2rem;
+    border-radius: 0.5rem;
+
+    @include respond(tab-port) {
+      margin: 2rem auto;
+    }
   }
 }
