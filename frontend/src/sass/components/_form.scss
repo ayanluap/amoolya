@@ -1,0 +1,61 @@
+.form {
+  margin: 3rem 2rem 3rem 0;
+
+  &__collection {
+    display: flex;
+    flex-direction: column;
+
+    @include respond(tab-port) {
+      align-items: center;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    width: 50%;
+
+    @include respond(tab-port) {
+      width: 80%;
+    }
+  }
+
+  &__label {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+  }
+
+  &__input {
+    border: none;
+    font-family: inherit;
+    background: $grey-l;
+    padding: 1rem 2rem;
+    resize: vertical;
+
+    &:placeholder-shown {
+      font-family: inherit;
+      text-transform: capitalize;
+    }
+  }
+
+  & .btn {
+    width: 50%;
+
+    @include respond(tab-port) {
+      width: 80%;
+    }
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
