@@ -1,9 +1,15 @@
 .form {
   margin: 3rem 2rem 3rem 0;
+  width: 100vw;
+
+  @include respond(tab-port) {
+    margin: 3rem 0;
+  }
 
   &__collection {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     @include respond(tab-port) {
       align-items: center;

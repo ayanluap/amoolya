@@ -140,7 +140,8 @@ body {
   border-radius: 0.5rem;
   text-transform: capitalize;
   font-size: 1.5rem;
-  margin: 2rem 0; }
+  margin: 2rem 0;
+  text-align: center; }
   @media (max-width: 56.25em) {
     .u-badge {
       display: flex;
@@ -577,11 +578,16 @@ body {
 
 .form {
   margin: 3rem 2rem 3rem 0;
+  width: 100vw;
   /* Chrome, Safari, Edge, Opera */
   /* Firefox */ }
+  @media (max-width: 56.25em) {
+    .form {
+      margin: 3rem 0; } }
   .form__collection {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
     @media (max-width: 56.25em) {
       .form__collection {
         align-items: center; } }
