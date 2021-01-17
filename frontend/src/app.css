@@ -270,6 +270,9 @@ body {
 
 .active {
   color: #dbee69; }
+  @media (max-width: 56.25em) {
+    .active {
+      color: #333; } }
 
 .section__header {
   height: 50vh; }
@@ -302,8 +305,7 @@ body {
     transform: translateX(-50%);
     cursor: pointer; }
   .landing__showcase {
-    padding: 4rem 0;
-    background-color: #ccc; }
+    padding: 4rem 0; }
   .landing__content {
     padding: 4rem 0;
     display: flex;
@@ -408,12 +410,15 @@ body {
   position: relative;
   background: url("assets/contact.jpg") no-repeat center center/cover; }
 
-.btn:link, .btn:visited {
+.btn:link, .btn:visited, .btn {
   padding: 1rem 3rem;
   display: inline-block;
   border-radius: 0.3rem;
   font-size: 1.5rem;
   margin: 2rem 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
   text-decoration: none;
   font-weight: 500;
   text-transform: capitalize; }
@@ -428,7 +433,7 @@ body {
 
 .card {
   height: 30rem;
-  background: rgba(45, 35, 124, 0.3);
+  background: rgba(204, 204, 204, 0.7);
   width: 33.33%;
   margin-bottom: 1rem;
   margin: 0 2rem;
@@ -437,6 +442,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  .card i {
+    color: #1b0f61; }
   .card:not(:last-child) {
     margin-right: 1.5rem; }
   @media (max-width: 56.25em) {
@@ -447,6 +454,33 @@ body {
     .card {
       width: 35rem;
       margin-bottom: 2rem; } }
+
+.card2 {
+  height: 45rem;
+  border: 0.2rem solid #ccc;
+  width: 45rem;
+  margin: 0 2rem;
+  margin-bottom: 4rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  .card2__img {
+    position: relative;
+    overflow: hidden;
+    height: 70%;
+    width: 100%;
+    margin-bottom: 2rem; }
+    .card2__img img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%; }
+  .card2__title {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 2rem; }
 
 .footer {
   min-height: 8rem;
@@ -474,3 +508,39 @@ body {
   .footer__text {
     font-size: 1.5rem;
     text-align: center; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  transition: all 0.3s ease; }
+  .modal__overlay {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); }
+  .modal__content {
+    position: absolute;
+    min-height: 40rem;
+    max-height: 80%;
+    width: 70%;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    padding: 4rem;
+    top: 50%;
+    left: 50%;
+    transition: all 0.3s ease;
+    overflow: auto; }
+    @media (max-width: 56.25em) {
+      .modal__content {
+        width: 80%; } }
+  .modal__close {
+    position: absolute;
+    display: inline-block;
+    top: -0.5rem;
+    right: 1rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #333; }

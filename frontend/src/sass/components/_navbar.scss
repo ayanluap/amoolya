@@ -147,4 +147,8 @@
 
 .active {
   color: $yellow;
+
+  @include respond(tab-port) {
+    color: $grey-d;
+  }
 }
