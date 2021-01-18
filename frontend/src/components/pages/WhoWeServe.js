@@ -109,6 +109,74 @@ const WhoWeServe = () => {
             </button>
           </div>
         </div>
+
+        <div className="container ">
+          <form
+            className="form"
+            style={{
+              width: '40rem',
+              margin: '2rem auto 2rem auto',
+            }}
+          >
+            <h3 className="h3">How do you imagine your retirement?</h3>
+            <p className="u-text u-mb-3">
+              Learn how we can help you create tax smart spending statergy to
+              avoid locking yourself into tax rate during retirement.
+            </p>
+            <div className="form__group" style={{ width: '100%' }}>
+              <label htmlFor="user" className="form__label">
+                First Name
+              </label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                className="form__input"
+                placeholder="Firstname"
+                required
+              />
+            </div>
+            <div className="form__group" style={{ width: '100%' }}>
+              <label htmlFor="user" className="form__label">
+                Last name
+              </label>
+              <input
+                type="text"
+                name="latname"
+                id="latname"
+                className="form__input"
+                placeholder="Lastname"
+                required
+              />
+            </div>
+            <div className="form__group" style={{ width: '100%' }}>
+              <label htmlFor="pwd" className="form__label">
+                Email
+              </label>
+              <input
+                type="email"
+                name="email2"
+                id="email2"
+                className="form__input"
+                placeholder="password"
+                required
+              />
+            </div>
+            <p className="" style={{ fontSize: '1.3rem' }}>
+              By submitting this form you are consenting to recieve marketting
+              emails from Amoolya Group of Consultants. You can revoke censent
+              to recieve emails at anytime by clicking unsubscribe link at
+              bottom of every emails.
+            </p>
+            <button
+              type="submit"
+              className="btn btn--blue"
+              style={{ width: '100%' }}
+            >
+              sign up
+            </button>
+          </form>
+        </div>
       </div>
 
       {/* MODALS */}
@@ -151,32 +219,32 @@ const WhoWeServe = () => {
           help you ensure that a backup plan is in place even when the team may
           no longer be around. <br />
           We’ll help you look at: <br />
-          <ul className="who-we-serve__list u-ml-5">
-            <li className="who-we-serve__list-item">
-              An estimate of lifetime financial support your child will need.
-            </li>
-            <li className="who-we-serve__list-item">
-              A Letter of Intent that guides members of the family, friends of
-              family and members of a Circle of Support, who will need to take
-              over for parents when the need arises to address social life,
-              employment, and residential needs.
-            </li>
-            <li className="who-we-serve__list-item">
-              Document a Circle of Support of key individuals and what each does
-              for your child such as family members, friends, a life coach,
-              behavioral counselors, etc. and a transition plan to keep this all
-              in place when you may not be able to.
-            </li>
-            <li className="who-we-serve__list-item">
-              Help you coordinate legal and estate planning which includes
-              Special Needs Trusts and government benefit eligibility.
-            </li>
-            <li className="who-we-serve__list-item">
-              Assemble the right team of experts to ensure you’re doing the best
-              you possibly can for securing your family’s future.
-            </li>
-          </ul>
         </p>
+        <ul className="who-we-serve__list u-ml-5">
+          <li className="who-we-serve__list-item">
+            An estimate of lifetime financial support your child will need.
+          </li>
+          <li className="who-we-serve__list-item">
+            A Letter of Intent that guides members of the family, friends of
+            family and members of a Circle of Support, who will need to take
+            over for parents when the need arises to address social life,
+            employment, and residential needs.
+          </li>
+          <li className="who-we-serve__list-item">
+            Document a Circle of Support of key individuals and what each does
+            for your child such as family members, friends, a life coach,
+            behavioral counselors, etc. and a transition plan to keep this all
+            in place when you may not be able to.
+          </li>
+          <li className="who-we-serve__list-item">
+            Help you coordinate legal and estate planning which includes Special
+            Needs Trusts and government benefit eligibility.
+          </li>
+          <li className="who-we-serve__list-item">
+            Assemble the right team of experts to ensure you’re doing the best
+            you possibly can for securing your family’s future.
+          </li>
+        </ul>
       </Modals>
 
       <Modals visible={visible3} closeModal={closeModal3}>
@@ -189,28 +257,27 @@ const WhoWeServe = () => {
           provide your participant’s with personalized advice and professionally
           designed portfolios, while safeguarding your own interests. <br />
           Throughout our work with employers we offer: <br />
-          <ul className="who-we-serve__list u-ml-5">
-            <li className="who-we-serve__list-item">
-              Comprehensive fee and investment analysis on your current plan.
-            </li>
-            <li className="who-we-serve__list-item">
-              Alternative solutions based on open architecture.
-            </li>
-            <li className="who-we-serve__list-item">
-              Smoothly managed portfolio changes.
-            </li>
-            <li className="who-we-serve__list-item">
-              Participant-focused services.
-            </li>
-            <li className="who-we-serve__list-item">
-              Investment Policy Statement (IPS) and Investment Committee
-              backing.
-            </li>
-            <li className="who-we-serve__list-item">
-              Innovative Employee Financial Wellness Program.
-            </li>
-          </ul>
         </p>
+        <ul className="who-we-serve__list u-ml-5">
+          <li className="who-we-serve__list-item">
+            Comprehensive fee and investment analysis on your current plan.
+          </li>
+          <li className="who-we-serve__list-item">
+            Alternative solutions based on open architecture.
+          </li>
+          <li className="who-we-serve__list-item">
+            Smoothly managed portfolio changes.
+          </li>
+          <li className="who-we-serve__list-item">
+            Participant-focused services.
+          </li>
+          <li className="who-we-serve__list-item">
+            Investment Policy Statement (IPS) and Investment Committee backing.
+          </li>
+          <li className="who-we-serve__list-item">
+            Innovative Employee Financial Wellness Program.
+          </li>
+        </ul>
       </Modals>
 
       <Modals visible={visible4} closeModal={closeModal4}>
@@ -223,35 +290,35 @@ const WhoWeServe = () => {
           opportunities. <br />
           As your fiduciary partner, we will roll up our sleeves to provide:{' '}
           <br />
-          <ul className="who-we-serve__list u-ml-5">
-            <li className="who-we-serve__list-item">
-              Multi-scenario projections to determine optimal balance of risk
-              and return needed.
-            </li>
-            <li className="who-we-serve__list-item">
-              Review and help to create an Investment Policy Statement and
-              spending plan.
-            </li>
-            <li className="who-we-serve__list-item">
-              Management of all custodial issues (including account setup,
-              transfers, disbursements, etc).
-            </li>
-            <li className="who-we-serve__list-item">
-              Clear and detailed quarterly performance reporting with benchmark
-              comparisons and quarterly economic review/outlook.
-            </li>
-            <li className="who-we-serve__list-item">
-              Committee presentations for meetings as needed.
-            </li>
-            <li className="who-we-serve__list-item">
-              Institutional bond expertise and pricing.
-            </li>
-            <li className="who-we-serve__list-item">
-              Access to institutional and nonprofit research and education.
-            </li>
-            <li className="who-we-serve__list-item">And more!</li>
-          </ul>
         </p>
+        <ul className="who-we-serve__list u-ml-5">
+          <li className="who-we-serve__list-item">
+            Multi-scenario projections to determine optimal balance of risk and
+            return needed.
+          </li>
+          <li className="who-we-serve__list-item">
+            Review and help to create an Investment Policy Statement and
+            spending plan.
+          </li>
+          <li className="who-we-serve__list-item">
+            Management of all custodial issues (including account setup,
+            transfers, disbursements, etc).
+          </li>
+          <li className="who-we-serve__list-item">
+            Clear and detailed quarterly performance reporting with benchmark
+            comparisons and quarterly economic review/outlook.
+          </li>
+          <li className="who-we-serve__list-item">
+            Committee presentations for meetings as needed.
+          </li>
+          <li className="who-we-serve__list-item">
+            Institutional bond expertise and pricing.
+          </li>
+          <li className="who-we-serve__list-item">
+            Access to institutional and nonprofit research and education.
+          </li>
+          <li className="who-we-serve__list-item">And more!</li>
+        </ul>
       </Modals>
     </Layout>
   );

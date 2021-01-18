@@ -1,0 +1,22 @@
+{
+  "name": "amoolya_intern",
+  "version": "1.0.0",
+  "description": "backend for amoolya",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayanluap/amoolya.git"
+  },
+  "author": "ayanpaul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayanluap/amoolya/issues"
+  },
+  "homepage": "https://github.com/ayanluap/amoolya#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

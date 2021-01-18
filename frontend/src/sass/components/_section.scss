@@ -113,6 +113,19 @@
 .client-exp {
   position: relative;
   background: url('assets/clientExp.jpg') no-repeat center center/cover;
+
+  &__content {
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+      margin-bottom: 3rem;
+      width: 50rem;
+      justify-content: flex-start;
+    }
+  }
 }
 
 .who-we-serve {
@@ -135,6 +148,38 @@
       flex-direction: column;
     }
   }
+
+  &__overlay {
+    position: relative;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__tab-box {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+
+    @include respond(tab-port) {
+      top: 65%;
+    }
+  }
+
+  &__tabs {
+    color: $yellow;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.active-tab {
+  background-color: $yellow;
+  color: $blue-d;
 }
 
 .blogs {

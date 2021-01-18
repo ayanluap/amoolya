@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '../layouts/Layout';
 import logo from '../../assets/logo.png';
 
 const Contact = () => {
+  useEffect(() => {
+    window.addEventListener('onload', () => {
+      window.scrollTo(0, 0);
+    });
+  });
+
   return (
     <Layout>
       <div className="section__header contact">
@@ -10,7 +16,11 @@ const Contact = () => {
           <p className="about__text container prime-heading">Contact Us</p>
         </div>
       </div>
-      <div className="contact__container container">
+
+      <div
+        className="contact__container container"
+        style={{ overflowX: 'hidden' }}
+      >
         <form className="form">
           <div className="form__collection container">
             <p className="u-text u-mb-2">
@@ -26,6 +36,7 @@ const Contact = () => {
                 id="fullname"
                 className="form__input"
                 placeholder="Full Name"
+                required
               />
             </div>
             <div className="form__group">
@@ -38,6 +49,7 @@ const Contact = () => {
                 id="email"
                 className="form__input"
                 placeholder="Email id"
+                required
               />
             </div>
             <div className="form__group">
@@ -50,6 +62,7 @@ const Contact = () => {
                 id="phone"
                 className="form__input"
                 placeholder="Phone number"
+                required
               />
             </div>
             <div className="form__group">
@@ -63,6 +76,7 @@ const Contact = () => {
                 rows="10"
                 className="form__input"
                 placeholder="enter your message"
+                required
               ></textarea>
             </div>
             <button type="submit" className="btn btn--blue">

@@ -10,30 +10,53 @@ const Footer = () => {
             Privacy Policy
           </Link>
           <Link to="/" className="footer__link">
-            TnC
+            Terms & Conditions
+          </Link>
+          <Link to="/" className="footer__link">
+            Disclaimer
           </Link>
         </div>
         <div className="footer__right">
-          <a href="#" target="_blank" className="footer__link">
-            <i class="fab fa-facebook fa-2x"></i>
+          <a
+            href="https://www.facebook.com/amoolyagroupofconsultants/"
+            target="_blank"
+            className="footer__link"
+            rel="noreferrer"
+          >
+            <i className="fab fa-facebook fa-2x"></i>
           </a>
-          <a href="#" target="_blank" className="footer__link">
-            <i class="fab fa-twitter fa-2x"></i>
+          <a
+            href="https://twitter.com/Amoolyagroupof1?s=08"
+            target="_blank"
+            className="footer__link"
+            rel="noreferrer"
+          >
+            <i className="fab fa-twitter fa-2x"></i>
           </a>
-          <a href="#" target="_blank" className="footer__link">
-            <i class="fab fa-instagram fa-2x"></i>
+          <a
+            href="https://instagram.com/amoolyagroup?igshid=tttp2883vb5a"
+            target="_blank"
+            className="footer__link"
+            rel="noreferrer"
+          >
+            <i className="fab fa-instagram fa-2x"></i>
           </a>
-          <a href="#" target="_blank" className="footer__link">
-            <i class="fab fa-linkedin fa-2x"></i>
+          <a
+            href="https://www.linkedin.com/company/amoolya-group-of-consultants"
+            target="_blank"
+            className="footer__link"
+            rel="noreferrer"
+          >
+            <i className="fab fa-linkedin fa-2x"></i>
           </a>
         </div>
       </div>
-      <p className="footer__text">
-        <div className="container">
+      <div className="container">
+        <p className="footer__text">
           Copyright © 2021 Amoolya - The group of consultants All rights
           reserved
-        </div>
-      </p>
+        </p>
+      </div>
     </div>
   );
 };

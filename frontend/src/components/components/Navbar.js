@@ -59,23 +59,12 @@ const Navbar = () => {
             </div>
             <li className="navbar__list">
               <NavLink
-                to="/"
-                exact
+                to="/know-us/our-vision"
                 className="navbar__link"
                 activeClassName="active"
                 onClick={navClose}
               >
-                Home
-              </NavLink>
-            </li>
-            <li className="navbar__list">
-              <NavLink
-                to="/about"
-                className="navbar__link"
-                activeClassName="active"
-                onClick={navClose}
-              >
-                About
+                Know us
               </NavLink>
             </li>
             <li className="navbar__list">

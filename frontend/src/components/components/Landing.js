@@ -21,18 +21,14 @@ const Landing = () => {
               viewBox="0 0 26 17"
               fill="none"
             >
-              <path
-                d="M2 1L13.3028 14L24 1"
-                stroke="#DBEE69"
-                stroke-width="3"
-              />
+              <path d="M2 1L13.3028 14L24 1" stroke="#DBEE69" strokeWidth="3" />
             </svg>
           </div>
         </div>
       </div>
 
       <div className="landing__showcase ">
-        <div className="container">
+        <div className="container u-center">
           <h1 className="h1">
             Integrated Advice and Solution for a wealthy Life
           </h1>
@@ -52,13 +48,16 @@ const Landing = () => {
             Amoolya’s customized advice and collaborative approach is focuses on
             five key planning areas.
           </p>
+          <Link to="/contact" className="btn btn--blue">
+            Schedule Your Introductory Call Today
+          </Link>
         </div>
       </div>
 
       <div className="landing__content container">
         <div className="card">
           <div className="card__img u-center u-mb-2">
-            <i class="fas fa-rupee-sign fa-7x"></i>
+            <i className="fas fa-rupee-sign fa-7x"></i>
           </div>
           <div className="card__title h3 u-center">Enhancing wealth</div>
           <div className="card__text u-text u-center">
@@ -67,7 +66,7 @@ const Landing = () => {
         </div>
         <div className="card">
           <div className="card__img u-center u-mb-2">
-            <i class="fas fa-hands-helping fa-7x"></i>
+            <i className="fas fa-hands-helping fa-7x"></i>
           </div>
           <div className="card__title h3 u-center">Helping you</div>
           <div className="card__text u-text u-center">
@@ -77,13 +76,19 @@ const Landing = () => {
         </div>
         <div className="card">
           <div className="card__img u-center u-mb-2">
-            <i class="fas fa-user-shield fa-7x"></i>
+            <i className="fas fa-user-shield fa-7x"></i>
           </div>
           <div className="card__title h3 u-center">Ensure your protection</div>
           <div className="card__text u-text u-center">
             Ensuring your assets are protected from unwelcome third parties.
           </div>
         </div>
+      </div>
+
+      <div className="container u-center">
+        <Link to="/who-we-serve" className="btn btn--blue">
+          How can we best help you
+        </Link>
       </div>
     </Fragment>
   );

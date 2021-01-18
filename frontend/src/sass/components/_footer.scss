@@ -26,7 +26,11 @@
 
   &__left {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__right {
