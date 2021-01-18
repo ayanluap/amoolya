@@ -221,26 +221,26 @@ const WhoWeServe = () => {
           We’ll help you look at: <br />
         </p>
         <ul className="who-we-serve__list u-ml-5">
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             An estimate of lifetime financial support your child will need.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             A Letter of Intent that guides members of the family, friends of
             family and members of a Circle of Support, who will need to take
             over for parents when the need arises to address social life,
             employment, and residential needs.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Document a Circle of Support of key individuals and what each does
             for your child such as family members, friends, a life coach,
             behavioral counselors, etc. and a transition plan to keep this all
             in place when you may not be able to.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Help you coordinate legal and estate planning which includes Special
             Needs Trusts and government benefit eligibility.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Assemble the right team of experts to ensure you’re doing the best
             you possibly can for securing your family’s future.
           </li>
@@ -259,22 +259,22 @@ const WhoWeServe = () => {
           Throughout our work with employers we offer: <br />
         </p>
         <ul className="who-we-serve__list u-ml-5">
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Comprehensive fee and investment analysis on your current plan.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Alternative solutions based on open architecture.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Smoothly managed portfolio changes.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Participant-focused services.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Investment Policy Statement (IPS) and Investment Committee backing.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Innovative Employee Financial Wellness Program.
           </li>
         </ul>
@@ -292,32 +292,32 @@ const WhoWeServe = () => {
           <br />
         </p>
         <ul className="who-we-serve__list u-ml-5">
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Multi-scenario projections to determine optimal balance of risk and
             return needed.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Review and help to create an Investment Policy Statement and
             spending plan.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Management of all custodial issues (including account setup,
             transfers, disbursements, etc).
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Clear and detailed quarterly performance reporting with benchmark
             comparisons and quarterly economic review/outlook.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Committee presentations for meetings as needed.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Institutional bond expertise and pricing.
           </li>
-          <li className="who-we-serve__list-item">
+          <li className="who-we-serve__list-item u-text">
             Access to institutional and nonprofit research and education.
           </li>
-          <li className="who-we-serve__list-item">And more!</li>
+          <li className="who-we-serve__list-item u-text">And more!</li>
         </ul>
       </Modals>
     </Layout>
