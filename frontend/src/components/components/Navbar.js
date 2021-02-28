@@ -59,7 +59,7 @@ const Navbar = () => {
             </div>
             <li className="navbar__list">
               <NavLink
-                to="/know-us/our-vision"
+                to="/"
                 className="navbar__link"
                 activeClassName="active"
                 onClick={navClose}
@@ -69,7 +69,7 @@ const Navbar = () => {
             </li>
             <li className="navbar__list">
               <NavLink
-                to="/client-experience"
+                to="/"
                 className="navbar__link"
                 activeClassName="active"
                 onClick={navClose}
@@ -79,7 +79,7 @@ const Navbar = () => {
             </li>
             <li className="navbar__list">
               <NavLink
-                to="/who-we-serve"
+                to="/"
                 className="navbar__link"
                 activeClassName="active"
                 onClick={navClose}
@@ -89,7 +89,7 @@ const Navbar = () => {
             </li>
             <li className="navbar__list">
               <NavLink
-                to="/blogs"
+                to="/"
                 className="navbar__link"
                 activeClassName="active"
                 onClick={navClose}
@@ -99,7 +99,7 @@ const Navbar = () => {
             </li>
             <li className="navbar__list">
               <NavLink
-                to="/contact"
+                to="/"
                 className="navbar__link"
                 activeClassName="active"
                 onClick={navClose}

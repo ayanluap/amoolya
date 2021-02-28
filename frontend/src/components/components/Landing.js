@@ -12,7 +12,7 @@ const Landing = () => {
             <p className="second-heading">
               A way to become a Crazy Rich Asian.
             </p>
-            <Link to="/know-us/our-vision" className="btn btn--yellow">
+            <Link to="/" className="btn btn--yellow">
               Know More
             </Link>
             <svg
@@ -49,7 +49,7 @@ const Landing = () => {
             Amoolya’s customized advice and collaborative approach is focuses on
             five key planning areas.
           </p>
-          <Link to="/contact" className="btn btn--blue">
+          <Link to="/" className="btn btn--blue">
             Schedule Your Introductory Call Today
           </Link>
         </div>
@@ -89,7 +89,7 @@ const Landing = () => {
       </div>
 
       <div className="container u-center">
-        <Link to="/who-we-serve" className="btn btn--blue">
+        <Link to="/" className="btn btn--blue">
           How can we best help you
         </Link>
       </div>
