@@ -89,10 +89,35 @@ const Contact = () => {
           <div className="address__img">
             <img src={logo} alt="logo" />
           </div>
-          <p className="address__text u-text">
-            KLJ Tower, 9th floor, 903, Netaji Subhash Place
-          </p>
-          <p className="u-badge u-text">Pitam Pura, Delhi, 110034</p>
+          <div
+            className="u-center"
+            style={{ borderBottom: '.1rem solid #ccc' }}
+          >
+            <p className="address__text u-text">
+              KLJ Tower, 9th floor, 903, Netaji Subhash Place
+            </p>
+            <p className="u-badge u-text">Pitam Pura, Delhi, 110034</p>
+          </div>
+
+          <div className="u-center">
+            <span className="u-badge u-text">Virtual Office</span>
+            <p className="address__text u-text">
+              Flat no.10, Block c-6, Second Floor Pocket-8, Sector 23-B, Dwarka,
+              New Delhi-110077
+            </p>
+          </div>
+          <div className="u-center">
+            <p className="u-badge u-text">Partner Office</p>
+            <p className="address__text u-text">
+              1st Floor Mehta Tower Community Centre B1, Janakpuri, Delhi-110085
+            </p>
+          </div>
+          <div className="u-center">
+            <p className="u-badge u-text">Marketing Office</p>
+            <p className="address__text u-text">
+              2nd Floor Vipul Agora Mall MG Road, Gurgaon
+            </p>
+          </div>
         </div>
       </div>
     </Layout>

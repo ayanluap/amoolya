@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import Carousel from '../layouts/Carousel';
 
 const Landing = () => {
   return (
@@ -11,7 +12,7 @@ const Landing = () => {
             <p className="second-heading">
               A way to become a Crazy Rich Asian.
             </p>
-            <Link to="/about" className="btn btn--yellow">
+            <Link to="/know-us/our-vision" className="btn btn--yellow">
               Know More
             </Link>
             <svg
@@ -53,6 +54,8 @@ const Landing = () => {
           </Link>
         </div>
       </div>
+
+      <Carousel />
 
       <div className="landing__content container">
         <div className="card">
